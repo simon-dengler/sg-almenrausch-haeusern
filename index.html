@@ -5,12 +5,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SG Almenrausch Häusern</title>
-    <link rel="icon" href="./img/sg-logo.png" type="image/png">
+    <link rel="stylesheet" href="/index.css" type="text/css">
+    <link rel="icon" href="/img/sg-logo.png" type="image/png">
+    <script src="/index.js"></script>
 </head>
 
 <body>
-    <h1>Coming soon</h1>
-    <img src="./img/wip.png" alt="Work in progress" height="400">
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="nav-div-img">
+                    <a href="/index.html">
+                        <img src="img/sg-logo.png" alt="Vereinswappen">
+                    </a>
+                </div>
+                <div class="nav-div">
+                    <a href="/index.html">
+                        Home
+                    </a>
+                </div>
+                <div class="nav-div">
+                    <a href="/index.html#anfahrt">
+                        Anfahrt
+                    </a>
+                </div>
+                <div class="nav-div">
+                    <a href="/index.html#sport">
+                        Sport
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="blank-div"></div>
+        <section class="hero-section">
+            <div class="hero-div">
+                <div class="text-div">
+                    <h1>Willkommen</h1>
+                    <h3>Bei der SG Almenrausch Häusern</h3>
+                </div>
+            </div>
+        </section>
+        <section id="anfahrt" class="anfahrt-section">
+            <h2>Anfahrt zum Schützenheim</h2>
+            <div class="anfahrt-description-div">
+                <p>
+                    Unser Schützenhaus befinet sich an der Adresse:
+                    <br><br>
+                    Häusern 16 <br>
+                    91161 Hilpoltstein <br>
+                    <br>
+                    Direkt gegenüber befindet sich die Gastwirtschaft Großhauser, wo wir uns gerne nach unseren Wettkämpfen mit euch zusammensetzen. 
+                    
+                </p>
+            </div>
+            <div id="anfahrt-div" class="anfahrt-div">
+                <button type="button" onclick="showMap()">
+                    Karte anzeigen
+                </button>
+                <p>Durch das Anzeigen der Karte stimmen Sie der Datenweitergabe an Google Maps zu.</p>
+            </div>
+        </section>
+        <section id="sport" class="sport-section">
+            <div>
+                <h2>Sport</h2>
+            </div>
+            <div class="sport-div">
+                <button  type="button" onclick="showDescription('lg-description')">
+                    <div class="disziplin-div" id="luge-div">
+                        <h3>Luftgewehr</h3>
+                    </div>
+                </button>
+                <button type="button" onclick="showDescription('lp-description')">
+                    <div class="disziplin-div" id="lupi-div">
+                        <h3>Luftpistole</h3>
+                    </div>
+                </button>
+                <button type="button" onclick="showDescription('bogen-description')">
+                    <div class="disziplin-div" id="bogen-div">
+                        <h3>Bogen</h3>
+                    </div>
+                </button>
+                <button type="button" onclick="showDescription('boeller-description')">
+                    <div class="disziplin-div" id="boeller-div">
+                        <h3>Böller</h3>
+                    </div>
+                </button>
+            </div>
+            <div class="description-div" id="description-div">
+                <div id="lg-description">
+                    <h3>Luftgewehr</h3>
+                    <p>
+                        Unter allen Disziplinen ist das Luftgewehr bei uns die beliebteste, bezogen auf die Anzahl der aktiven Schützen.
+                        Aktuell nehmen wir mit 5 Mannschaften am aktiven Ligabetrieb teil - und das oft erfolgreich. 
+                        Die Ergebnisse könnt ihr auf der offiziellen Ergebnisseite des Gaus im <a href="https://www.rwk-onlinemelder.de/online/listen/110">RWK-Onlinemelder (externer Link)</a> einsehen. 
+                        Zusätzlich findet ihr die Ergebnisse wöchentlich aktuell auf unserer Instagram-Seite in der Story! 
+                        <br><br>
+                        Das Training für Luftgewehr und Luftpistole findet mittwochs ab 18 Uhr bei uns im Schützenhaus statt. 
+                        Bei Interesse könnt ihr uns gerne kontaktieren und zu einem Probetraining vorbeikommen. 
+                        Bitte gebt uns vorher Bescheid, damit wir euch bestmöglich mit unserer Expertise dabei begleiten können. 
+                        <br><br>
+                        <a href="/kontakt.html">Kontakt</a>
+                    </p>
+                </div>
+                <div id="lp-description">
+                    <h3>Luftpistole</h3>
+                    <p>
+                        Die Luftpistole erfreut sich bei uns großer Beliebtheit aufgrund der reduzierten Ausrüstung, der schnelleren Vorbereitungszeit und der größeren Zielfläche, verglichen mit dem Luftgewehrschießen. 
+                        Aktuell stellen wir eine Mannschaft im aktiven Ligabetrieb. 
+                        Die Ergebnisse könnt ihr auf der offiziellen Ergebnisseite des Gaus im <a href="https://www.rwk-onlinemelder.de/online/listen/110">RWK-Onlinemelder (externer Link)</a> einsehen. 
+                        Zusätzlich findet ihr die Ergebnisse wöchentlich aktuell auf unserer Instagram-Seite in der Story! 
+                        <br><br>
+                        Das Training für Luftgewehr und Luftpistole findet mittwochs ab 18 Uhr bei uns im Schützenhaus statt. 
+                        Bei Interesse könnt ihr uns gerne kontaktieren und zu einem Probetraining vorbeikommen. 
+                        Bitte gebt uns vorher Bescheid, damit wir euch bestmöglich mit unserer Expertise dabei begleiten können. 
+                        <br><br>
+                        <a href="/kontakt.html">Kontakt</a>
+                    </p>
+                </div>
+                <div id="bogen-description">
+                    <h3>Bogen</h3>
+                    <p>
+                        Im Gegensatz zu den Pressluft-Disziplinen, kennzeichnet sich das Bogenschießen durch eine höhere Herausforderung an den Körper, da die Energie für den Schuss selbst aufgebracht werden muss. 
+                        Außerdem wird in der Regel über längere Distanzen geschossen und bei schönem Wetter an der frischen Luft. 
+                        Bei uns in Verein können wir Recurve- und Blankbogenschießen anbieten. 
+                        <br><br>
+                        Das Training findet bei uns unregelmäßig nach Absprache, meist am Samstag Nachmittag gegen 15 Uhr statt. 
+                        Bei Interesse könnt ihr uns gerne kontaktieren und zu einem Probetraining vorbeikommen. 
+                        Bitte gebt uns vorher Bescheid, damit wir euch bestmöglich mit unserer Expertise dabei begleiten können. 
+                        <br><br>
+                        <a href="/kontakt.html">Kontakt</a>
+                    </p>
+                </div>
+                <div id="boeller-description">
+                    <h3>Böller</h3>
+                    <p>
+                        Beim Böllerschießen geht es weniger um das Zielen und Treffen als vielmehr um die Freude am Schuss und um die Geselligkeit. 
+                        Unsere Böllergruppe ist mehrmals pro Jahr bei vereinsübergreifenden Böllertreffen zu Gast und übernimmt zudem die standesgemäße Untermalung unserer vereinsinternen Feiern. 
+                        <br><br>
+                        Bei Interesse am Böllern könnt ihr uns gerne kontaktieren. 
+                        <br><br>
+                        <a href="/kontakt.html">Kontakt</a>
+                    </p>
+                </div>
+                <div id="general-description">
+                    <p>
+                        Vereinsmitglieder und -freunde aller Disziplinen kommen regelmäßig bei unseren Veranstaltungen zusammen. 
+                        Wir veranstalten jeweils einmal pro Jahr unser Kerwa- und Königsschießen – inklusive einer Abschlussfeier mit Siegerehrung. 
+                        Außerdem veranstalten wir jedes Jahr ein Grillfest an Pfingsten.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo-div">
+                <a href="#">
+                    <img src="/img/sg-logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="footer-main-div">
+
+                <h3>SG Almenrausch Häusern</h3>
+                <div class="footer-sub-div">
+                    <div class="list-div">
+                        <ul>
+                            <li><a href="/kontakt.html">Kontakt</a></li>
+                            <li><a href="/impressum.html">Impressum</a></li>
+                            <li><a href="/datenschutz.html">Datenschutz</a></li>                        
+                        </ul>
+                    </div>
+                    <div class="link-div">
+                        <div>
+                            <p>Social Media</p>
+                        </div>
+                        <a href="https://www.instagram.com/sg.haeusern.e.v/">
+                            <img src="/img/Instagram_logo.svg.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
