@@ -102,86 +102,137 @@ button {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.footer-container{
-    margin-top: 2em;
-    background-color: #0b6818;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: top;
-    justify-content:flex-start;
-    height: fit-content;
-    width: 100%;
-    padding: 2em 4em;
-    color: whitesmoke;
-
-    .logo-div{
-        padding: 0 2em 2em 0;
-        img{
-            width: 6em;
-        }
-    }
-
-    .footer-main-div{
-        display: flex;
-        flex-direction: column;
-        width: min(18em, 50vw);
-        
-        h3{
-            margin-bottom: 1em;
-        }
-
-        .footer-sub-div{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-            .list-div{
-                ul{
-                    list-style: none;
-                    li{
-                        a{
-                            text-decoration: none;
-                            color: whitesmoke;
-
-                        }
-                    }
-                    li:not(:last-child){
-                        margin-bottom: 1em;
-                    }
-                }
-            }
-
-            .link-div{
-                color: whitesmoke;
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-                p{
-                    margin-bottom: 1em;
-                }
-                a{
-                    img{
-                        width: 2em;
-                    }
-                }
-            }
-        }
-    }
-}
-
 .main-container{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 2em;
+    padding: 2em 1em;
     h1{
         margin-bottom: 2rem;
     }
+    h2{
+        margin: 1rem 0;
+    }
     h3{
         margin: 1rem 0;
+    }
+}
+
+.footer-container {
+    margin-top: 2em;
+    background-color: #0b6818;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: top;
+    justify-content: flex-start;
+    height: fit-content;
+    width: 100%;
+    padding: 2em 4em 1em 4em;
+    color: whitesmoke;
+
+    .logo-div {
+        padding: 0 2em 2em 0;
+
+        img {
+            width: 6em;
+        }
+    }
+
+    .footer-main-div {
+        display: flex;
+        flex-direction: column;
+        width: min(100%, 35em);
+
+        h3 {
+            margin-bottom: 1em;
+        }
+
+        .footer-sub-div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .list-div {
+                ul {
+                    list-style: none;
+
+                    li {
+                        margin-bottom: 1em;
+                        a {
+                            text-decoration: none;
+                            color: whitesmoke;
+
+                        }
+                    }
+
+                    /*li:not(:last-child) {
+                        margin-bottom: 1em;
+                    }*/
+                }
+            }
+
+            .link-div {
+                color: whitesmoke;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+
+                p {
+                    margin-bottom: 1em;
+                }
+
+                a {
+                    img {
+                        width: 2em;
+                    }
+                }
+            }
+
+            .verbaende-div {
+                color: whitesmoke;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+
+                div {
+                    p {
+                        font-size: 1em;
+                        margin-bottom: 1em;
+                    }
+                }
+
+                .verbaende-sub-div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    
+
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+                        font-size: 0.7em;
+                        
+
+                        a {
+                            margin-right: 0.7em;
+                            img {
+                                width: 2rem;
+                            }
+                        }
+                    }
+
+                    div:not(:last-child){
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+        }
     }
 }
 
